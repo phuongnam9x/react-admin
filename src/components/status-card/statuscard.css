@@ -1,0 +1,63 @@
+.status-card {
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: color 0.5s ease 0s;
+    margin-bottom: 30px;
+
+}
+.status-card__icon {
+    width: 30%;
+    height: 100%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.status-card__info {
+   flex-grow: 1;
+   text-align: center;
+   z-index: 1;
+   text-transform: capitalize;
+}
+.status-card__info > h4 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* khởi tạo */
+.status-card::before {
+    position: absolute;
+    content: "";
+    left: -50%;
+    top: 0;
+    background-image: linear-gradient(
+        to top right,
+        var(--main-color),
+        var(--second-color)
+
+    );
+    width: 111%;
+    padding-top: 100%;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+}
+/* trả về */
+.status-card:hover::before {
+    transform: scale(2);
+}
+
+.status-card:hover {
+    color: red;
+}
+
+/* chart */
+
