@@ -18,3 +18,7 @@ You will also see any lint errors in the console.
  
  ![](./sample_2.jpg) 
  
+ ![](./sample_3.jpg) 
+ 
+ ![](./sample_4.jpg) 
+ 
